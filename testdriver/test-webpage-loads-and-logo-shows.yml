@@ -1,0 +1,15 @@
+version: 4.0.78
+steps:
+  - prompt: Verify that the webpage loads successfully.
+    commands:
+      - command: hover-text
+        text: Smith Team
+        description: main heading on the webpage
+        action: hover
+  - prompt: >-
+      Assert that the logo is visible on the page.  # Use the content of the
+      file from the environment
+    commands:
+      - command: hover-image
+        description: logo in the top-left corner
+        action: hover
