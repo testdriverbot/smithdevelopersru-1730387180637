@@ -1,0 +1,20 @@
+version: 4.0.78
+steps:
+  - prompt: 'Navigate to each section: Кейсы, Заказать, Технологии, Контакты.'
+    commands:
+      - command: hover-text
+        text: Кейсы
+        description: link in the header
+        action: click
+  - prompt: 'Navigate to each section: Кейсы, Заказать, Технологии, Контакты.'
+    commands:
+      - command: hover-text
+        text: Заказать
+        description: link in the header
+        action: click
+  - prompt: 'Navigate to each section: Кейсы, Заказать, Технологии, Контакты.'
+    commands:
+      - command: hover-text
+        text: Технологии
+        description: link in the header
+        action: click
