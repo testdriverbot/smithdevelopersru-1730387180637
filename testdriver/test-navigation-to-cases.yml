@@ -1,0 +1,14 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Кейсы" in the header.
+    commands:
+      - command: hover-text
+        text: Кейсы
+        description: link in the header
+        action: click
+  - prompt: >-
+      Assert that the cases page loads and displays project examples.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the cases page displays project examples
