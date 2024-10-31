@@ -1,0 +1,22 @@
+version: 4.0.78
+steps:
+  - prompt: Click on the main call to action button labeled "Сделать заказ."
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+  - prompt: Click on the main call to action button labeled "Сделать заказ."
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Сделать заказ
+        description: main call to action button
+        action: click
+  - prompt: >-
+      Assert that the corresponding action or page is initiated or loaded.  #
+      Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the page contains the text "Заполнить брифинг"
